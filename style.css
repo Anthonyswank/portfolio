@@ -1,0 +1,173 @@
+header h1, header h2, footer h2 {
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-family: cursive;
+}
+
+header h1 {
+  font-size: 44px;
+  padding: 25px;
+}
+
+header h2, footer h2 {
+  font-size: 28px;
+}
+
+header h2 {
+  padding: 10px 0 25px 0;
+}
+
+footer h2 {
+  padding: 35px 0 35px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 35px 0 0;
+  font-size: 20px;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+header, footer {
+  background-color: black;
+}
+
+body {
+  background: #e1e1e1;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  background: gray;
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.group img {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 75px;
+  margin: 25px;
+}
+
+.item {
+  margin: 20px;
+  flex: 1;
+}
+
+.item-double {
+  margin: 20px;
+  flex: 2;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 2px solid black;
+}
+
+/* button headers for h3 */
+
+hr {
+  height: 8px;
+  background: gray;
+}
+
+/* Line breaks */
+
+.picture {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* picture spacing for first 2 images */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+/* Contact page link styles */
+
+ol li a {
+  font-size:18px;
+}
+
+ol li a:link    { color: blue;  }
+ol li a:visited { color: purple;   }
+ol li a:hover   { color: darkblue; }
+ol li a:active  { color: red;  }
+
+form input, textarea {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+} 
+
+form label {
+  margin: 10px 0 10px 0;
+}
+
+@media all and (min-width:800px) {
+  .group {
+    flex-direction: row;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 0;
+  }
+
+  header h1 {    
+    margin-top: 20px;
+    padding: 0 35px 0 35px;
+  }
+
+  header h2 {
+    margin-top: 35px;
+    padding: 0 100px 0 35px;
+  }
+
+  header nav {
+    margin: 30px 50px 30px 0;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+}
